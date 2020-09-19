@@ -64,15 +64,7 @@ class MainActivity : AppCompatActivity() {
             i++
         }
         num2 = num2String.toString().toDouble()
-        /*if (num1 == 27092005 || num2 == 27092005){
-            salida.text = "JULY CHIKITA JOTA"*/
 
-
-        //}else {
-        /*if (num1 == 11102005 || num2 == 11102005){
-            salida.text = "JUANPEDRO FUNAO"
-            return
-        }*/
         resultado = when (operacion) {
             SUMA -> num1 + num2
             RESTA -> num1 - num2
@@ -85,27 +77,12 @@ class MainActivity : AppCompatActivity() {
             }
             else -> 0.0
         }
-        if (resultado == 21133994.0) {
-            salida.text = "Te espero en mi casa bb <3"
-            return
-        }
-        if (num1 == 4071997.0 || num2 == 4071997.0) {
-            salida.text = "Chupalo JEJE"
-            return
-        }
-        /*if(resultado == 14064012){
-            salida.text = "CaCaS Y Casarla IS REAL"
-            return
-        }*/
         salida.text = if ("$resultado".endsWith(".0")) {
             "$resultado".replace(".0", "")
         } else {
             "%.2f".format(resultado)
         }
         clearOnlyVar()
-
-
-        //}
     }
 
     fun operacion(operacion: Int) {
