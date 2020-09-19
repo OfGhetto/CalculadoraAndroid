@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         resta.setOnClickListener { operacion(RESTA) }
         mutiplicacion.setOnClickListener { operacion(MULTI) }
         division.setOnClickListener { operacion(DIVI) }
-        //punto.setOnClickListener { }
+        punto.setOnClickListener {operacion(PUNTO) }
         igual.setOnClickListener { igual() }
     }
 
